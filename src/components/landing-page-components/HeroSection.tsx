@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
   Building,
   Clock,
@@ -12,6 +11,7 @@ import {
   MapPin,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -46,10 +46,12 @@ const HeroSection = () => {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="btn-primary">Apply as a Candidate</Button>
-            <Button variant="outline" className="btn-outline">
+            <Link href="https://t.me/megegnaJob_bot" target="__blank" className="btn-primary p-2 px-3">
+              Apply as a Candidate
+            </Link>
+            <Link href="/" className="btn-outline p-2 px-3">
               Hire Talent
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
