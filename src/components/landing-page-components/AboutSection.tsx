@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -7,9 +8,11 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+              <Image
+                src="/megegna-about.jpg"
                 alt="Diverse professionals collaborating"
+                width={600}
+                height={400}
                 className="rounded-lg shadow-lg w-full object-cover h-[400px]"
               />
               <div className="absolute -bottom-6 -right-6 bg-brand-primary rounded-lg h-24 w-24 flex items-center justify-center">
@@ -35,9 +38,9 @@ const AboutSection = () => {
               their skills and aspirations.
             </p>
             <p className="text-gray-700 mb-6 text-lg">
-              Whether you&apos;re seeking remote, hybrid, or in-person positions, we
-              ensure a seamless recruitment process that benefits both
-              candidates and employers.
+              Whether you&apos;re seeking remote, hybrid, or in-person
+              positions, we ensure a seamless recruitment process that benefits
+              both candidates and employers.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="flex items-center gap-3">

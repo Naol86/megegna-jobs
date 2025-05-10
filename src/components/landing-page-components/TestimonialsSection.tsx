@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -8,28 +9,28 @@ const testimonials = [
       "Thanks to Megegna Jobs, I landed my dream remote internship that perfectly matched my skills and career goals!",
     author: "Jane Smith",
     position: "Computer Science Student",
-    image: "https://randomuser.me/api/portraits/women/43.jpg",
+    image: "/user.png",
   },
   {
     quote:
       "Megegna Jobs found us the perfect candidate with excellent communication skills and technical abilities.",
     author: "John Wilson",
     position: "Hiring Manager, TechSolutions Inc.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/user.png",
   },
   {
     quote:
       "The recruitment process was smooth and efficient. I was placed in a hybrid role that offers the flexibility I need.",
     author: "Anna Rodriguez",
     position: "UX Designer",
-    image: "https://randomuser.me/api/portraits/women/63.jpg",
+    image: "/user.png",
   },
   {
     quote:
       "As a small business, finding qualified candidates was challenging until we discovered Megegna Jobs. Their thorough vetting process saved us time and money.",
     author: "Michael Chen",
     position: "CEO, Innovate Studio",
-    image: "https://randomuser.me/api/portraits/men/91.jpg",
+    image: "/user.png",
   },
 ];
 
@@ -63,10 +64,12 @@ const TestimonialsSection = () => {
             <div className="bg-white rounded-lg shadow-lg p-8 md:p-10 mb-8">
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <div className="md:w-1/3 flex justify-center">
-                  <img
+                  <Image
                     src={testimonials[activeIndex].image}
                     alt={testimonials[activeIndex].author}
-                    className="rounded-full w-24 h-24 object-cover border-4 border-brand-primary/20"
+                    width={96}
+                    height={96}
+                    className="rounded-full object-cover border-4 border-brand-primary/20"
                   />
                 </div>
                 <div className="md:w-2/3">
