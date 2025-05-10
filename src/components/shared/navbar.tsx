@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Briefcase } from "lucide-react"
 import Link from "next/link"
 
-export function Navbar() {
+export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b py-2 bg-white">
       <div className="container mx-auto flex h-16 items-center justify-between">
