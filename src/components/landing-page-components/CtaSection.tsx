@@ -19,9 +19,9 @@ const CtaSection = () => {
             </Button>
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white/10 py-3 px-8 rounded-md font-medium transition-colors text-lg"
+              className="border-white bg-transparent hover:bg-transparent text-gray-100 hover:text-gray-100 py-3 px-8 rounded-md font-medium transition-colors text-lg"
             >
-              Post a Job
+              Hire Talent
             </Button>
           </div>
         </div>
